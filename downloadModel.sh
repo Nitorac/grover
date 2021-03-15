@@ -24,4 +24,8 @@ gdown https://drive.google.com/uc?id=1hJ3ulT2q2mYdefjNmmMzsX96FlzC8Eh3 || exit 1
 echo ""
 echo ""
 echo "Téléchargements terminés"
+echo ""
+echo "Fusion des fichiers téléchargés ..."
+cat model.?? > model.ckpt-800000.data-00000-of-00001
+echo "OK"
 exit 0
